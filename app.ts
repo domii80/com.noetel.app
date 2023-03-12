@@ -19,6 +19,7 @@ eventEmitter.on('scream', myEventHandler);
 
 //Fire the 'scream' event:
 eventEmitter.emit('scream');
+console.log('I hear a scream again!');
 /*
 var http = require('http');
 http.createServer(function (req: any, res:any) {
