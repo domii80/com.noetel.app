@@ -1,8 +1,12 @@
 import { HtmlTag } from "./HtmlTag";
 import { htmltemplate } from "./BasicHtml";
+import { runServer } from './Server';
 
-var asdf = new HtmlTag('asdf');
+var tag = new HtmlTag('');
 console.log(htmltemplate);
-asdf.setTagName('p');
-console.log(asdf.getTagName());
+tag.setTagName('div');
+console.log(tag.getTagName());
+
+
+runServer();
 

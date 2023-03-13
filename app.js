@@ -2,7 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const HtmlTag_1 = require("./HtmlTag");
 const BasicHtml_1 = require("./BasicHtml");
-var asdf = new HtmlTag_1.HtmlTag('asdf');
+const Server_1 = require("./Server");
+var tag = new HtmlTag_1.HtmlTag('');
 console.log(BasicHtml_1.htmltemplate);
-asdf.setTagName('p');
-console.log(asdf.getTagName());
+tag.setTagName('div');
+console.log(tag.getTagName());
+(0, Server_1.runServer)();
