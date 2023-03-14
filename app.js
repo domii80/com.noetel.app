@@ -2,9 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const HtmlTag_1 = require("./HtmlTag");
 const BasicHtml_1 = require("./BasicHtml");
-const Server_1 = require("./Server");
+const Eventhandling_1 = require("./Eventhandling");
 var tag = new HtmlTag_1.HtmlTag('');
 console.log(BasicHtml_1.htmltemplate);
 tag.setTagName('div');
 console.log(tag.getTagName());
-(0, Server_1.runServer)();
+const s = {};
+s.x = 10;
+console.log('Obj: ' + s.x);
+(0, Eventhandling_1.eventHandling)();
+//  runServer();
